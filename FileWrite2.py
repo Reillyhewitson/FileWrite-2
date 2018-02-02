@@ -5,8 +5,8 @@ import glob #necassery functions
 
 file_name = str('Generic')
 new_file_name = str('Generic')
-rpath = "C:\\Users\\Reilly Hewitson\\OneDrive - UTC Reading\\GCSE Computer science\\Python\\Personal Python\\Made in Python"
-path = "C:\\Users\\Reilly Hewitson\\OneDrive - UTC Reading\\GCSE Computer science\\Python\\Personal Python\\Made in Python\\"
+rpath = os.getcwd()
+path = rpath+'\\'
 file_list = [f for f in os.listdir(rpath) if os.path.isfile(os.path.join(rpath, f))] #taking all data in the directory and saving it
 file_exist = int(0)
 run = 0
